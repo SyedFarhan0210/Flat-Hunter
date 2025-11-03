@@ -1,4 +1,4 @@
-package com.flatbooking.onboarding_service;
+package com.flatapp.onboarding_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

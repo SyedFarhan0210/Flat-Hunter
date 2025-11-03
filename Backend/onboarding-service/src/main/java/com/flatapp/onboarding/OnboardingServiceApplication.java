@@ -1,4 +1,4 @@
-package com.flatbooking.onboarding_service;
+package com.flatapp.onboarding;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
