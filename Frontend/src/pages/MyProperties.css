@@ -1,0 +1,304 @@
+.myprops-page {
+  background: #f7f8fa;
+  padding: 40px 6%;
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Header section */
+.myprops-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.myprops-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.myprops-add-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.myprops-add-btn:hover {
+  background: #0056b3;
+}
+
+/* Property cards grid */
+.myprops-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Individual property card */
+.myprops-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.myprops-card:hover {
+  transform: translateY(-4px);
+}
+
+.myprops-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.myprops-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin: 12px;
+}
+
+.myprops-card p {
+  color: #666;
+  margin: 4px 12px;
+  font-size: 0.95rem;
+}
+
+/* Card buttons */
+.myprops-card-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+.myprops-card-actions button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.myprops-edit {
+  background: #ffc107;
+  color: #111;
+}
+
+.myprops-edit:hover {
+  background: #e0a800;
+}
+
+.myprops-delete {
+  background: #f44336;
+  color: white;
+}
+
+.myprops-delete:hover {
+  background: #c62828;
+}
+
+/* Modal styling */
+.myprops-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.myprops-modal {
+  background: white;
+  padding: 25px 35px;
+  border-radius: 14px;
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.myprops-modal h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.myprops-modal input[type="text"],
+.myprops-modal input[type="number"],
+.myprops-modal input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.myprops-modal label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.myprops-submit {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.myprops-submit:hover {
+  background: #0056b3;
+}
+
+.myprops-cancel {
+  background: #777;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.myprops-cancel:hover {
+  background: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ----------------------------- */
+/* 🏠 MODAL STYLING FIXES        */
+/* ----------------------------- */
+.myprops-modal {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 14px;
+  width: 460px;
+  max-width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.myprops-modal h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.myprops-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.myprops-modal input[type="text"],
+.myprops-modal input[type="number"],
+.myprops-modal input[type="date"],
+.myprops-modal input[type="email"],
+.myprops-modal textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fafafa;
+  transition: border 0.2s;
+}
+
+.myprops-modal input:focus,
+.myprops-modal textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.myprops-modal label {
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.myprops-modal .myprops-submit,
+.myprops-modal .myprops-cancel {
+  flex: 1;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.myprops-modal .myprops-submit {
+  background: #007bff;
+  color: white;
+}
+
+.myprops-modal .myprops-submit:hover {
+  background: #0056b3;
+}
+
+.myprops-modal .myprops-cancel {
+  background: #777;
+  color: white;
+}
+
+.myprops-modal .myprops-cancel:hover {
+  background: #555;
+}
+
+/* Align buttons horizontally */
+.myprops-modal .modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Slight fade/scale effect for entry */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

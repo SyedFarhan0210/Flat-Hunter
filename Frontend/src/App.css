@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+/* Layout wrapper for all pages under protected routes */
+.protected-content {
+  min-height: calc(100vh - 140px); /* Adjust this depending on header+footer height */
+  padding: 30px 5%;
+  background: #f7f8fa;
+  box-sizing: border-box;
+}
+
+

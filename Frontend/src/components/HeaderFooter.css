@@ -1,0 +1,96 @@
+/* 🌟 Header Styling */
+.app-header {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5%;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 36px;
+  width: 36px;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0b3d91;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.logout-btn,
+.login-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover,
+.login-btn:hover {
+  background: #0056b3;
+}
+
+/* 🌙 Footer Styling */
+.app-footer {
+  background: #f9fafb;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  color: #555;
+  margin-top: 40px;
+}
+
+.app-footer strong {
+  color: #0b3d91;
+}
+
+.footer-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

@@ -12,6 +12,9 @@ import io.jsonwebtoken.security.Keys;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/onboarding")
 public class OnboardingController {
@@ -35,6 +38,7 @@ private String secret;
             .getBody()
             .getSubject();
 }
+
 
     
     @PostMapping
